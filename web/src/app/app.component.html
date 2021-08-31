@@ -1,0 +1,27 @@
+
+<mat-toolbar>
+  <mat-icon (click)="drawer.toggle()" class="icon-menu">menu</mat-icon>
+  <span class="example-spacer"></span>
+  <span>Prueba Tecnica</span>
+  
+  
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <a routerLink="reto1" routerLinkActive="active">Reto 1</a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <a routerLink="reto2" routerLinkActive="active">Reto 2</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
+
+

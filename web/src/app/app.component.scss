@@ -1,0 +1,33 @@
+.example-container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+a:hover {
+  color: #333;
+}
+
+.active {
+  color: #f90;
+}
+
+.icon-menu {
+  cursor: pointer;
+}
